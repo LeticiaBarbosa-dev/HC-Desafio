@@ -4,6 +4,7 @@
     margin: 0;
     color: white;
     font-family: 'Open Sans', sans-serif;
+    cursor: auto;
 }
 
 html {
@@ -20,7 +21,6 @@ html {
 
 body{
     background-color: var(--black);
-    cursor: pointer;
 }
 
 header{
@@ -49,15 +49,20 @@ header{
 }
 
 .cadastro{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 1rem;
     font-weight: bolder;
+    outline: none;
 }
 
 .cadastro-element{
-    margin-bottom: .75rem;
+    margin-top: .75rem;
+}
+.alert{
+    font-size: 1rem;
 }
 
 .input{
@@ -67,7 +72,6 @@ header{
     border: 0;
     border-radius: .20rem;
     padding-left: 0.75rem;
-
     outline: none;
     box-shadow: none;
 
@@ -79,7 +83,7 @@ header{
     font-weight: var(--black);
 }
 
-.botao{
+#botao{
     background-color: var(--button-color);
     color: var(--black);
     text-align: center;
@@ -90,6 +94,12 @@ header{
     font-weight: bold;
     font-size: .95rem;
     margin-top: .25rem;
+    outline: none;
+    box-shadow: none;
+}
+#botao:hover{
+    cursor: pointer;
+    background-color: #E9B11B;
 }
 
 .footer{

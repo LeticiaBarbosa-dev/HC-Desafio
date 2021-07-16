@@ -25,10 +25,13 @@
                 <div class="cadastro-element">
                     <p>cadastre-se e fique por dentro das nossas ofertas</p>
                 </div>
-                <form>
-                    <div class="cadastro-element"><input class="input nome" type="text" placeholder="Primeiro Nome*"></div>
-                    <div class="cadastro-element"><input class="input email" type="email" placeholder="Email*"></div>
-                    <div class="cadastro-element"><input class="botao" type="submit" value="CADASTRAR"></div>
+                <form id="form">
+                    <input class="input cadastro-element" type="text" placeholder="Primeiro Nome*" id="nome">
+                    <p class="alert"  id="message-nome" style="color: white;"></p>
+                    <input class="input cadastro-element" type="email" placeholder="Email*" id="email">
+                    <p class="alert" id="message-email" style="color: white;"></p>
+                    <p class="alert"  id="message-alert" style="color: white;"></p>
+                    <div class="cadastro-element"><button id="botao" >ENVIAR</button></div>
                 </form>
             </div>
         </section>
@@ -38,4 +41,5 @@
         <p>Copyright © 2021 - Todos os Direitos Reservados</p>
     </footer>
 </body>
+<script src="js/script.js"></script>
 </html>
