@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="assets/logo.png" alt="Logo da LB - Suplements">
+        <h1>LB - Suplementos</h1>
     </header>
 
     <main class="container">
@@ -18,20 +18,18 @@
             <img class="bw-logo" src="assets/banner.jpg" alt="Logo black week" width="100%">
             <div class="div-1">
                 <h2>Produtos com até 40% de desconto!</h2>
+                <p>Uma diversidade de produtos de <strong>qualidade</strong> para <strong>intensificar</strong> ainda mais o seu treino!</p>
             </div>
         </section>
         <section class="section-2">
             <div class="cadastro">
                 <div class="cadastro-element">
-                    <p>cadastre-se e fique por dentro das nossas ofertas</p>
+                    <p id="mensagem">cadastre-se e fique por dentro das nossas ofertas</p>
                 </div>
-                <form id="form">
-                    <input class="input cadastro-element" type="text" placeholder="Primeiro Nome*" id="nome">
-                    <p class="alert"  id="message-nome" style="color: white;"></p>
-                    <input class="input cadastro-element" type="email" placeholder="Email*" id="email">
-                    <p class="alert" id="message-email" style="color: white;"></p>
-                    <p class="alert"  id="message-alert" style="color: white;"></p>
-                    <div class="cadastro-element"><button id="botao" >ENVIAR</button></div>
+                <form id="form" class="content-card">
+                    <div><input class="input cadastro-element" type="text" placeholder="Primeiro Nome*" id="nome" required="required"></div>
+                    <div><input class="input cadastro-element" type="email" placeholder="Email*" id="email" required="required"></div>
+                    <input class="cadastro-element" type="submit" id="botao" value="ENVIAR">
                 </form>
             </div>
         </section>
@@ -42,4 +40,5 @@
     </footer>
 </body>
 <script src="js/script.js"></script>
+<script src="js/anime-scroll.js"></script>
 </html>

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 *{
     padding: 0;
     margin: 0;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     cursor: auto;
 }
 
@@ -16,23 +16,25 @@ html {
     /*Cores*/
     --black: #00050b;
     --button-color: #FFBA00;
-    --placeholder: #4F4F51;
+    --placeholder: white;
 }
 
 body{
-    background-color: var(--black);
+    background: var(--black);
 }
 
 header{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 4rem;
+    margin: 1.5rem;
+    font-size: 1rem;
 }
 
-.logo{
-    position: fixed; /* Fixed position - sit on top of the page */
-    transition: 0.2s; 
+h1{
+    justify-content: start;
+    color:#d20913;
+    transition: 0.5s; 
+    text-decoration: underline;
 }
 
 .container{
@@ -41,10 +43,19 @@ header{
     margin-bottom: 10rem;
 }
 
+.container p{
+    margin-top: 1rem;
+    font-size: .9rem;
+}
+
+.container h2{
+    text-decoration: underline;
+}
+
 .div-1{
     display: grid;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 5rem 0 5rem 0;
 }
 
@@ -61,12 +72,18 @@ header{
 .cadastro-element{
     margin-top: .75rem;
 }
+
+#mensagem{
+    font-size: .90rem;
+}
+
 .alert{
     font-size: 1rem;
 }
 
 .input{
-    color: var(--black);
+    background-color: #4F4F51;
+    color: var(--placeholder);
     width: 25rem;
     height: 3rem;
     border: 0;
@@ -78,7 +95,7 @@ header{
 }
 
 ::-webkit-input-placeholder {
-    color: var(--black);
+    color: var(--placeholder);
     font-size: 1rem;
     font-weight: var(--black);
 }
@@ -93,17 +110,18 @@ header{
     border-radius: .20rem;
     font-weight: bold;
     font-size: .95rem;
-    margin-top: .25rem;
+    margin-top: .75rem;
     outline: none;
     box-shadow: none;
 }
 #botao:hover{
     cursor: pointer;
-    background-color: #E9B11B;
+    background-color: #CEAE59;
 }
 
 .footer{
-    font-size: .90rem;
+    background-color: #d20913;
+    font-size: .75rem;
     margin: 5rem 0 .50rem 0;
     text-align: center;
 }
