@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*VARIÁVEIS*/
+:root{
+    /*Cores*/
+    --black: #000000;
+    --button-color: #FFBA00;
+    --placeholder: #4F4F51;
+}
+
+body{
+    background-color: var(--black);
+}
+
+header{
+    text-align: start;
+    margin: 2rem 0 0 2rem;
+}
+
+.container{
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.div-1{
+    display: grid;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem 0 5rem 0;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.cadastro-element{
+    margin-bottom: .75rem;
+}
+
+.input{
+    width: 25rem;
+    height: 3rem;
+    border: 0;
+    border-radius: .20rem;
+    padding-left: 0.75rem;
+}
+
+::-webkit-input-placeholder {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: var(--black);
+}
+
+.botao{
+    background-color: var(--button-color);
+    color: var(--black);
+    width: 8rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: .20rem;
+    font-weight: bold;
+    font-size: .95rem;
+    margin-top: .25rem;
+}
+
+.footer{
+    font-size: .90rem;
+    margin: 5rem 0 .50rem 0;
+    text-align: center;
+}
+
