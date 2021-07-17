@@ -13,34 +13,58 @@ html {
 
 /*VARIÁVEIS*/
 :root{
-    /*Cores*/
     --black: #00050b;
     --button-color: #FFBA00;
-    --placeholder: white;
+    --base-color: white;
 }
 
 body{
     background: var(--black);
 }
 
-header{
+.header{
     display: flex;
+    position: fixed;
+    justify-content: space-between;
     align-items: center;
-    margin: 1.5rem;
+    width: 100%;
+    background-color: #d20913;
+    padding: .50rem 1rem .50rem 1rem;
     font-size: 1rem;
+    box-shadow: 0.156rem 0.078rem 0.078rem rgb(173, 172, 172);
 }
 
 h1{
-    justify-content: start;
-    color:#d20913;
+    color: var(--base-color);
     transition: 0.5s; 
     text-decoration: underline;
+    text-shadow: 0.156rem 0.078rem 0.078rem #4F4F51;
+}
+
+h1:hover{
+    cursor: pointer;
+}
+
+.redes-sociais{
+    margin-right: 3rem;
+    text-shadow: 0.156rem 0.078rem 0.078rem #4F4F51;
+    font-size: 2rem;
+    
+}
+
+.fa-linkedin-in{
+    /* topo | direita | inferior | esquerda */
+    margin: 0 0 0 1rem;
+}
+
+.fa-linkedin-in:hover, .fa-github-alt:hover{
+    cursor: pointer;
+    color: #4F4F51;
 }
 
 .container{
     display: grid;
     justify-content: space-evenly;
-    margin-bottom: 10rem;
 }
 
 .container p{
@@ -52,11 +76,15 @@ h1{
     text-decoration: underline;
 }
 
+.bw-logo{
+    margin-top: 7rem;
+}
+
 .div-1{
     display: grid;
     text-align: center;
     font-size: 1.25rem;
-    margin: 5rem 0 5rem 0;
+    margin: 10rem 0 5rem 0;
 }
 
 .cadastro{
@@ -83,7 +111,7 @@ h1{
 
 .input{
     background-color: #4F4F51;
-    color: var(--placeholder);
+    color: var(--base-color);
     width: 25rem;
     height: 3rem;
     border: 0;
@@ -95,7 +123,7 @@ h1{
 }
 
 ::-webkit-input-placeholder {
-    color: var(--placeholder);
+    color: var(--base-color);
     font-size: 1rem;
     font-weight: var(--black);
 }
