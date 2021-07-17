@@ -49,12 +49,10 @@ h1:hover{
     margin-right: 3rem;
     text-shadow: 0.156rem 0.078rem 0.078rem #4F4F51;
     font-size: 2rem;
-    
 }
 
 .fa-linkedin-in{
-    /* topo | direita | inferior | esquerda */
-    margin: 0 0 0 1rem;
+    margin-left: 1rem;
 }
 
 .fa-linkedin-in:hover, .fa-github-alt:hover{
@@ -148,9 +146,75 @@ h1:hover{
 }
 
 .footer{
+    text-align: center;
     background-color: #d20913;
     font-size: .75rem;
-    margin: 5rem 0 .50rem 0;
-    text-align: center;
+    margin: 5rem 0 0 0;
+    
 }
 
+/*RESPONSIVIDADE*/
+@media screen and (min-width: 280px) and (max-width: 500px)  {
+    .header{
+        display: flex;
+        position: fixed;
+        align-items: center;
+        padding: .50rem .25rem .50rem .25rem;
+        justify-content: space-around;
+    }
+	h1{
+        font-size: 1.5rem;
+    }
+
+    .redes-sociais{
+        margin-right: .75rem;
+        font-size: 1.5rem;
+    }
+
+    .bw-logo{
+        margin-top: 4rem;
+    }
+
+    .div-1{
+        margin: 5rem 0 2.5rem 0;
+    }
+
+    .div-1 p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .input{
+        background-color: #4F4F51;
+        color: var(--base-color);
+        width: 16rem;
+        height: 3rem;
+        border: 0;
+        border-radius: .20rem;
+        padding-left: 0.75rem;
+        outline: none;
+        box-shadow: none;
+    
+    }
+
+    #mensagem{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .footer{
+        background-color: #d20913;
+        font-size: .75rem;
+        margin: 5rem 0 0 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer{
+        background-color: #d20913;
+        font-size: .75rem;
+        margin: 5rem 0 0 0;
+        text-align: center;
+    }
+}
