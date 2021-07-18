@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="Moda Viva" src="https://github.com/LeticiaBarbosa-dev/HC-Desafio/blob/main/assets/banner-readme.png" width="100%">
+  <img alt="Banner com alguns suplementos e a logo da black friday." src="https://github.com/LeticiaBarbosa-dev/HC-Desafio/blob/main/assets/banner-readme.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -20,8 +20,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - JS
 
 ## 💻 Projeto
-
-A landing-page da <strong>LB - Suplementos</strong> é um projeto fictício de um ecommerce para captação de nome e email do usuário e persistência no localstorage.
+A landing-page da <strong>LB - Suplementos</strong> é um projeto fictício que foi criado para um desafio do programa Hiring Coders, promovido pela Gama Academy. O objetivo do projeto é captar nome e email de possíveis clientes e armazená-los no localStorage.
 
 🔗 Link para o projeto em real time: https://leticiabarbosa-dev.github.io/HC-Desafio/
 
